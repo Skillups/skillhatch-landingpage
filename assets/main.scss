@@ -319,6 +319,10 @@ footer{
   padding-top:100px;
   padding-bottom:50px;
 
+  img.logo{
+    position: relative;
+  }
+
   p{
     font-size: 14px;
     font-weight: 400;
@@ -462,13 +466,11 @@ footer{
   }
 }
 
-a.underline:link, a.underline:visited{
-}
-
 .wrapper{
   background-color: $green-color;
   height: 40px;
-  width: 40px !important;
+  min-width: 40px;
+  max-width: 40px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -477,5 +479,163 @@ a.underline:link, a.underline:visited{
   &:hover{
     background-color: $darkgreen-color;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    padding: 14px;
+  }
+
+  h2{
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  #header {
+    width: 100%;
+    margin:0;
+
+    .left{
+      width: 100%;
+
+      div:first-child{
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      div:first-child .button{
+        margin:0;
+      }
+    }
+
+    h3, .right{
+      display: none;
+    }
+  }
+
+  #header_description {
+    height: auto;
+    .right{
+      display:none
+    }
+
+    h1{
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  .content, .content .text-content, .full_width_content .content .text-content{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .full_width_content{
+    flex-direction: column;
+  }
+
+  #article1{
+    margin:0;
+    padding: 30px;
+
+    .up2, .dot1, .dot2{
+      display: none;
+    }
+
+    .content{
+      width: 100%;
+    }
+  }
+
+  #article2{
+    margin:0;
+
+    .up{
+      display: none;
+    }
+
+    .content{
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+  }
+
+  #article3{
+    margin:0;
+    flex-direction: column;
+
+    .text-content img{
+      display: none;
+    }
+
+    .content{
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+  }
+
+  #article4{
+    margin:0;
+
+    .stars{
+      display: none;
+    }
+
+    .content{
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+  }
+
+  #banner{
+    margin-top:50px;
+    padding: 30px;
+
+    .content{
+      width: 100%;
+    }
+  }
+
+  footer{
+    padding:0;
+    margin-top:50px;
+
+    .content {
+      div{
+        width: 100%;
+      }
+
+      .subscribe{
+        width: 100%;
+
+        .input_container{
+          box-sizing: border-box;
+        }
+
+        h3{
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+
+      .split, .logo{
+        margin-top:20px;
+      }
+
+      .break{
+        display: none;
+      }
+
+      .mobile-right{
+        text-align: right;
+      }
+
+      .space-between:last-child{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
 }
