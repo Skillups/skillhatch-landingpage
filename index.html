@@ -14,6 +14,7 @@
 
     <link rel="icon" type="image/x-icon" href="assets/images/Logo/PNG/favicon.ico">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/scripts.js"></script>
     <link rel="stylesheet" href="assets/main.css">
 </head>
@@ -24,17 +25,29 @@
     <div class="left">
         <div>
             <img class="logo" src="assets/images/Logo/PNG/Vector.png" alt="SkillHatch Logo"/>
-            <div class="button green">
-                <img src="assets/images/burger.png" alt="skillhatch fb"/>
+            <div class="dropdown">
+                <div class="button green">
+                    <img src="assets/images/burger.png" alt="skillhatch fb"/>
+                </div>
+                <h3>Meni</h3>
+                <div class="dropdown-content">
+                    <div class="mobile-header">
+                        <img class="logo" src="assets/images/Logo/PNG/Vector.png" alt="SkillHatch Logo"/>
+                    </div>
+
+                    <a class="" href="#">O nas</a>
+                    <a class="" href="https://app.skillhatch.io/sl/signup?type=company">Za podjetja</a>
+                    <a class="" href="https://app.skillhatch.io/sl/login">Prijava</a>
+                    <a class="" href="https://app.skillhatch.io/sl/signup?type=user">Registracija</a>
+                </div>
             </div>
-            <h3>Meni</h3>
         </div>
     </div>
 
     <div class="right">
-        <a class="button white" href="#">Za podjetja</a>
-        <a class="button white" href="#">Prijava</a>
-        <a class="button white" href="#">Registracija</a>
+        <a class="button white" href="https://app.skillhatch.io/sl/signup?type=company">Za podjetja</a>
+        <a class="button white" href="https://app.skillhatch.io/sl/login">Prijava</a>
+        <a class="button white" href="https://app.skillhatch.io/sl/signup?type=user">Registracija</a>
     </div>
 </div>
 
@@ -58,9 +71,9 @@
                 štipendij, pri iskanju študentskega dela, mednarodni izkušnji, poklicni <br/>
                 in karierni poti.
             </p>
-            <div class="button green">
+            <a class="button green" href="https://app.skillhatch.io/sl/signup?type=user">
                 Začni z raziskovanjem poti
-            </div>
+            </a>
         </div>
     </div>
 </article>
@@ -89,9 +102,9 @@
             <p>
                 Razišči stotine poklicev, ki so predstavljeni na platformi SkillHatch in si pripravi svojo listo najbolj zanimivih poklicev. Preveri katera znanja in kompetence potrebuješ za posamezen poklic in si sestavi nabor kompetenc, ki jih še potrebuješ, da boš #1!
             </p>
-            <div class="button green">
+            <a class="button green" href="https://app.skillhatch.io/sl/signup?type=user">
                 Začni z raziskovanjem poti
-            </div>
+            </a>
         </div>
     </div>
     <img src="assets/images/2.png" alt="img 1" class="img1">
@@ -107,9 +120,9 @@
             <p>
                 Na podlagi svojih želja si načrtuj izobraževalno pot iz osnovne šole preko srednje šole pa vse do fakultete. Svojemu kompletu znanj in kompetenc dodaj tudi neformalna izobraževanja, ki jih delodajalci zelo cenijo in tako postani njihova prva izbira!
             </p>
-            <div class="button green">
+            <a class="button green" href="https://app.skillhatch.io/sl/signup?type=user">
                 Začni z raziskovanjem poti
-            </div>
+            </a>
         </div>
     </div>
     <img src="assets/images/3.png" alt="img 1" class="img1">
@@ -126,9 +139,9 @@
             <p>
                 Poklikaj, katera znanja obvladaš, predstavi kaj vse počneš v življenju in se prijavi na vznemirljive priložnosti, ki ti jih ponujajo podjetja: štipendije, prakse, študentska dela, mednarodne priložnosti, predstavitve podjetij, hekatoni, nagradni razpisi, …
             </p>
-            <div class="button green">
+            <a class="button green" href="https://app.skillhatch.io/sl/signup?type=user">
                 Začni z raziskovanjem poti
-            </div>
+            </a>
         </div>
     </div>
     <img src="assets/images/stars.png" alt="img 1" class="stars">
@@ -141,13 +154,15 @@
             SkillHatch - tvoj karierni katapult, ki te izstreli med zvezde!
         </h2>
 
-        <div class="button white">Začni z raziskovanjem poti</div>
+        <a class="button white" href="https://app.skillhatch.io/sl/signup?type=user">
+            Začni z raziskovanjem poti
+        </a>
     </div>
 </article>
 
 <footer>
     <div class="content">
-        <div>
+        <!--<div>
             <div class="subscribe">
                 <h3>Prijavi se na naše novice in bodi na tekočem.</h3>
                 <div class="input_container">
@@ -157,27 +172,30 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="split">
             <div>
-                <a href="#" class="normal">Za podjetja</a><br/>
-                <a href="#" class="normal">Za Prijava</a><br/>
-                <a href="#" class="normal">Registracija</a>
+                <a href="https://app.skillhatch.io/sl/signup?type=company" class="normal">Za podjetja</a><br/>
+                <a href="https://app.skillhatch.io/sl/login" class="normal">Za Prijava</a><br/>
+                <a href="https://app.skillhatch.io/sl/signup?type=user" class="normal">Registracija</a>
             </div>
 
             <div class="social_buttons">
-                <div class="wrapper">
+                <div class="wrapper" onclick="window.open('https://facebook.com/profile.php/?id=61552666233094', '_blank');">
                     <img src="assets/images/yt.png" alt="skillhatch fb"/>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper" onclick="window.open('https://www.instagram.com/skillhatchplatform/', '_blank');">
                     <img src="assets/images/ig.png" alt="skillhatch fb"/>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper" onclick="window.open('https://m.facebook.com/profile.php/?id=61552666233094', '_blank');">
                     <img src="assets/images/fb.png" alt="skillhatch fb"/>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper" onclick="window.open('https://www.linkedin.com/company/skillhatch/', '_blank');">
                     <img src="assets/images/in.png" alt="skillhatch fb"/>
                 </div>
+
+
+
             </div>
         </div>
         <div class="break"></div>
@@ -185,7 +203,7 @@
             <img class="logo" src="assets/images/Logo/PNG/Vector.png" alt="SkillHatch Logo" width="250"/>
         </div>
         <div class="split">
-            <div><p>Dunajska cesta 119<br/>1000 Ljubljana<br/>Osebni obisk:pon.-pet. med 8. do 16. uro<br/>01 47 19 182</p></div>
+            <div><p>Veliki Otok 44b, <br/>6230 Postojna</p></div>
             <div class="mobile-right"><p>Varovanje zasebnosti<br/>Pravno obvestilo</p></div>
         </div>
         <div class="break"></div>
@@ -194,8 +212,16 @@
             <a href="#" style="text-decoration:underline;">Pravilnik o zasebnosti</a>
         </div>
     </div>
-
 </footer>
+
+<div id="cookies">
+    <span>Spletno mesto uporablja piškotke za zagotavljanje najboljše uporabniške izkušnje.</span>
+    <a href="#.html" target="_blank"> Izvedite več tukaj.</a>
+    <div style="margin-top:15px; text-align:right;">
+        <button class="button green" onclick="confirmCookies();">Potrdi uporabo piškotkov</button>
+    </div>
+</div>
+
 </body>
 </html>
 
