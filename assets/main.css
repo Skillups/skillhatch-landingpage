@@ -455,6 +455,9 @@ footer .space-between {
   img {
     max-width: 100%;
   }
+  img.img1 {
+    border-radius: 20px;
+  }
   body {
     padding: 14px;
   }

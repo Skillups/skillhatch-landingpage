@@ -558,6 +558,10 @@ footer{
 @media only screen and (max-width: 600px) {
   img {
     max-width: 100%;
+
+    &.img1{
+      border-radius: 20px;
+    }
   }
 
   body{
@@ -627,21 +631,11 @@ footer{
         display: none;
         transition: 1s;
       }
-
-
-
-
-
     }
 
     h3, .right{
       display: none;
     }
-
-
-
-
-
 
   }
 
