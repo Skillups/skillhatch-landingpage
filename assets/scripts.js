@@ -9,14 +9,11 @@ $(document).ready(function () {
         const mobileheader = document.getElementsByClassName("dropdown-content")[0];
         const display = window.getComputedStyle(mobileheader).getPropertyValue('display');
 
-
         if (display == "none"){
-            mobileheader.display = "none"
-            alert("dsa")
-            /*console.dir(this);
-            //note evt.target can be a nested element, not the body element, resulting in misfires
-            console.log(evt.target);
-            alert("body clicked");*/
+            window.focus();
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
         }
     });
 });
@@ -24,4 +21,8 @@ $(document).ready(function () {
 function confirmCookies() {
     localStorage.setItem('cookies', 'true');
     document.getElementById("cookies").hidden = true;
+}
+
+function toggleMenu(){
+    document.getElementsByClassName("dropdown-content")[0].toggle();
 }
