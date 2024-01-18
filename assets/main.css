@@ -493,9 +493,6 @@ footer .space-between {
     padding: 14px;
     z-index: 1;
   }
-  #header .left .dropdown-content a:first-of-type {
-    display: none !important;
-  }
   #header .left .dropdown-content a {
     display: flex !important;
   }
