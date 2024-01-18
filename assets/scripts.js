@@ -12,6 +12,7 @@ $(document).ready(function () {
 
         if (display == "none"){
             mobileheader.display = "none"
+            alert("dsa")
             /*console.dir(this);
             //note evt.target can be a nested element, not the body element, resulting in misfires
             console.log(evt.target);
