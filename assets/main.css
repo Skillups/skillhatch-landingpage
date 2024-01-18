@@ -581,6 +581,9 @@ footer .space-between {
   #banner .content {
     width: 100%;
   }
+  #banner .button {
+    font-size: 11px;
+  }
   footer {
     padding: 0;
     margin-top: 50px;
@@ -613,6 +616,15 @@ footer .space-between {
     flex-direction: column-reverse;
   }
 }
+
+@media only screen and (max-width: 320px) { 
+  .button {
+    font-size: 12px;
+  }
+  #banner .button {
+    font-size: 9px;
+  }
+}
 #cookies {
   position: fixed;
   bottom: 0;
@@ -642,6 +654,10 @@ footer .space-between {
 }
 #cookies a:active {
   color: #34B56F;
+}
+
+.margin-large  {
+  margin-top: 120px;
 }
 
 /*# sourceMappingURL=main.css.map */
